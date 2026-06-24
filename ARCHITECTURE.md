@@ -29,19 +29,19 @@ An AI-powered chatbot that answers natural language questions about the Northwin
          ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                  Agent Service                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │ Strands Agent Framework                             │   │
-│  │  - System prompt configuration                      │   │
-│  │  - Tool management                                  │   │
-│  │  - LLM routing & decision making                    │   │
-│  └──────────────────┬──────────────────────────────────┘   │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │ Strands Agent Framework                             │    │
+│  │  - System prompt configuration                      │    │
+│  │  - Tool management                                  │    │
+│  │  - LLM routing & decision making                    │    │
+│  └──────────────────┬──────────────────────────────────┘    │
 │                     │                                       │
-│  ┌──────────────────┴──────────────────┐                   │
-│  │ Available Tools                     │                   │
-│  │  - supplier_info(product_name)      │                   │
-│  │    └─> Queries Products + Suppliers│                   │
-│  └─────────────────────────────────────┘                   │
-└─────────────┬──────────────────────────────────────────────┘
+│  ┌──────────────────┴──────────────────┐                    │
+│  │ Available Tools                     │                    │
+│  │  - supplier_info(product_name)      │                    │
+│  │    └─> Queries Products + Suppliers│                     │
+│  └─────────────────────────────────────┘                    │
+└─────────────┬───────────────────────────────────────────────┘
               │
               ▼
 ┌─────────────────────────────────────────────────────────────┐
@@ -54,12 +54,12 @@ An AI-powered chatbot that answers natural language questions about the Northwin
               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │          Database Layer (SQLAlchemy/SQLModel)               │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │ Query Execution                                     │   │
-│  │  - Dynamic SQL generation                          │   │
-│  │  - Result fetching & serialization                 │   │
-│  └──────────────────┬──────────────────────────────────┘   │
-└─────────────────────┼──────────────────────────────────────┘
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │ Query Execution                                     │    │
+│  │  - Dynamic SQL generation                           │    │
+│  │  - Result fetching & serialization                  │    │
+│  └──────────────────┬──────────────────────────────────┘    │
+└─────────────────────┼───────────────────────────────────────┘
                       │
                       ▼
           ┌───────────────────────────────┐
